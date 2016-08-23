@@ -1,26 +1,37 @@
-# Telling-stories-dashboard
+# telling-stories-dashboard
 
-This README outlines the details of collaborating on this Ember addon.
+Dashboard for [telling-stories](https://github.com/mvdwg/telling-stories#readme).
 
-## Installation
+This addon is part of [telling-stories](https://github.com/mvdwg/telling-stories#readme) addon and is not supposed to be use directly.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+## Development
 
-## Running
+```
+$ ember install telling-stories-dashboard
+```
 
-* `ember serve`
-* Visit your app at http://localhost:4200.
+### Running
 
-## Running Tests
+```
+$ ember serve
+```
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+Building the app with logger enabled
 
-## Building
+```
+$ DEBUG=telling-stories DEBUG_LEVEL=trace ember build
+```
 
-* `ember build`
+and then visit your app at http://localhost:4200.
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+### Tests
+
+```
+$ npm test
+```
+
+## License
+
+telling-stories is licensed under the MIT license.
+
+See [LICENSE](./LICENSE.md) for the full license text.
