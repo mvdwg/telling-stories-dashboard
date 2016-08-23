@@ -4,7 +4,7 @@ const { $ } = Ember;
 
 export default Ember.Route.extend({
   model() {
-    return $.getJSON('/telling-stories/acceptance.json');
+    return $.getJSON('/telling-stories.json');
   },
 
   setupController(controller, model) {
