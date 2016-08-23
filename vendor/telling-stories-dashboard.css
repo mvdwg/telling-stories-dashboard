@@ -1,11 +1,20 @@
-/* Dashboard */
+html,
+body,
+.ember-application > .ember-view,
+.ember-application > .ember-view > .ember-view {
+  height: 100%; margin: 0;
+}
+
 .ts {
   display: flex;
   flex-flow: row;
+  height: 100%;
+  margin: 0;
 }
 
 .ts nav {
   width: 220px;
+  border-right: 1px solid silver;
 }
 
 .ts nav ul {
@@ -26,6 +35,7 @@
 
 .ts iframe {
   width: 100%;
-  border: 1px solid silver;
+  border: none;
   min-height: 400px;
+  flex: 1 1;
 }
