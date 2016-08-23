@@ -50,6 +50,7 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
+    "ember-cli-htmlbars": "^1.1.0",
     "ember-engines": "^0.2.11"
   },
   "ember-addon": {

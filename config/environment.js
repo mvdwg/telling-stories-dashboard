@@ -3,7 +3,7 @@
 
 module.exports = function(environment/*, appConfig */) {
   var ENV = {
-    modulePrefix: 'telling-stories',
+    modulePrefix: 'telling-stories-dashboard',
     environment: environment
   }
 
