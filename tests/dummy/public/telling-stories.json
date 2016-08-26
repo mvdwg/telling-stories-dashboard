@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Acceptance | favorites",
+    "tests": [
+      "User favorites email from inbox",
+      "User favorites email from sent"
+    ]
+  },
+  {
+    "name": "Acceptance | user writes an email",
+    "tests": [
+      "User replies an emaill",
+      "User writes and send an email from scratch"
+    ]
+  }
+]

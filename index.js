@@ -13,8 +13,6 @@ module.exports = EngineAddon.extend({
     }
 
     this.app = app;
-
-    app.import('vendor/telling-stories-dashboard.css');
   },
 
   isDevelopingAddon() {
