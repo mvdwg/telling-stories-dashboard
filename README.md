@@ -1,4 +1,5 @@
 # telling-stories-dashboard
+[![Build Status](https://travis-ci.org/mvdwg/telling-stories-dashboard.svg?branch=master)](https://travis-ci.org/mvdwg/telling-stories-dashboard)
 
 Dashboard for [telling-stories](https://github.com/mvdwg/telling-stories#readme).
 
