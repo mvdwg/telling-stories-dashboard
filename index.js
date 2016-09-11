@@ -5,6 +5,7 @@ var EngineAddon = require('ember-engines/lib/engine-addon');
 
 module.exports = EngineAddon.extend({
   name: 'telling-stories-dashboard',
+  lazyLoading: false,
 
   included: function(app) {
     // see: https://github.com/ember-cli/ember-cli/issues/3718
