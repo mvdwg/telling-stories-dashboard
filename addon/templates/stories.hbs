@@ -3,16 +3,16 @@
     <header class="ts-header">
       <h1>Features</h1>
     </header>
-    {{#each modules as |module|}}
-      {{feature-module module}}
+    {{#each features as |feature|}}
+      {{feature-module feature}}
 
       <nav>
-        {{#each module.tests as |test|}}
-          {{feature-item module test}}
+        {{#each feature.tests as |test|}}
+          {{#link-to 'stories.story' test.id class="ts-feature-item"}}{{test.name}}{{/link-to}}
         {{/each}}
       </nav>
     {{/each}}
   </div>
 
-  <iframe class="ts-player" id="tsplayer" name="tsplayer" src="data:text/plain,Pick a feature"></iframe>
+  {{outlet}}
 </main>

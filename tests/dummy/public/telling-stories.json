@@ -1,16 +1,28 @@
 [
   {
-    "name": "Acceptance | favorites",
+    "module": "Acceptance | favorites",
     "tests": [
-      "User favorites email from inbox",
-      "User favorites email from sent"
+      {
+        "id": "12345",
+        "name": "User favorites email from inbox"
+      },
+      {
+        "id": "6789",
+        "name": "User favorites email from sent"
+      }
     ]
   },
   {
-    "name": "Acceptance | user writes an email",
+    "module": "Acceptance | user writes an email",
     "tests": [
-      "User replies an emaill",
-      "User writes and send an email from scratch"
+      {
+        "id": "54321",
+        "name": "User replies an emaill"
+      },
+      {
+        "id": "9876",
+        "name": "User writes and send an email from scratch"
+      }
     ]
   }
 ]
