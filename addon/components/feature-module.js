@@ -9,7 +9,7 @@ const Component = Ember.Component.extend({
   text: computed('feature', function() {
     let feature = this.get('feature');
 
-    return Ember.String.capitalize(feature.name.replace(/^Acceptance \|\s*/, ''));
+    return Ember.String.capitalize(feature.module.replace(/^Acceptance \|\s*/, ''));
   })
 });
 

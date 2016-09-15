@@ -10,10 +10,10 @@ const Component = Ember.Component.extend({
   target: 'tsplayer',
 
   href: computed('feature', 'test', function() {
-    let feature = this.get('feature');
-    let test = this.get('test');
+    let module = this.get('feature.module');
+    let test = this.get('test.name');
 
-    return `/tests/index.html?tellingStories&module=${encodeURIComponent(feature.name)}&filter=${encodeURIComponent(test)}`;
+    return `/tests/index.html?tellingStories&module=${encodeURIComponent(module)}&filter=${encodeURIComponent(test)}`;
   })
 });
 

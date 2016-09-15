@@ -10,6 +10,6 @@ export default Ember.Route.extend({
   setupController(controller, model) {
     this._super(...arguments);
 
-    controller.set('modules', model);
+    controller.set('features', model);
   }
 });
