@@ -6,6 +6,37 @@ Dashboard for [telling-stories](https://github.com/mvdwg/telling-stories#readme)
 
 This addon is part of [telling-stories](https://github.com/mvdwg/telling-stories#readme) addon and is not supposed to be use directly.
 
+## Usage
+
+```
+$ ember install telling-stories-dashboard
+```
+
+Edit app/router.js to mount the new engine
+
+```js
+Router.map(function() {
+  this.mount('telling-stories-engine', { as: 'feature' });
+  ...
+});
+```
+
+Access http://localhost:4200/features
+
+### Mirage
+
+If you're using mirage you need to add a passthrough rule for `/telling-stories.json` route.
+
+`mirage/config.js`
+
+```js
+export default function() {
+  this.passthrough('/telling-stories.json');
+  ...
+});
+```
+__Note that we are registering the passthrough rule before any `this.namespace` call`__
+
 ## Development
 
 ```
