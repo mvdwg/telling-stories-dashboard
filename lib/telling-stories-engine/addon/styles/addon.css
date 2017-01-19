@@ -71,7 +71,8 @@ body,
   color:#666;
 }
 
-.ts-feature-item:hover {
+.ts-feature-item:hover,
+.ts-feature-item.active {
   background: linear-gradient(to bottom, #F2F2F2, #fff);
 }
 

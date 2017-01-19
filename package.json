@@ -49,9 +49,13 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
     "ember-cli-htmlbars": "^1.1.0",
-    "ember-engines": "^0.3.0"
+    "ember-engines": "0.4.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "paths": [
+      "lib/telling-stories-engine",
+      "lib/telling-stories-parser"
+    ]
   }
 }

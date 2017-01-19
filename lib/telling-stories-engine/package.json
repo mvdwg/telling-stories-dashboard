@@ -1,0 +1,8 @@
+{
+  "name": "telling-stories-engine",
+  "keywords": [
+    "ember-addon"
+  ],
+  "devDependencies": {
+  }
+}
