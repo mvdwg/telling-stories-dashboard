@@ -6,5 +6,15 @@ module.exports = {
 
   isDevelopingAddon() {
     return true;
+  },
+
+  included: function(app, addon) {
+    if (typeof app.import !== 'function' && app.app) {
+      app = app.app;
+    }
+
+    this.app = app;
+
+    this._super.included.apply(this, arguments);
   }
 };

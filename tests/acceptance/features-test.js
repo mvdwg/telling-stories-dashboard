@@ -4,24 +4,24 @@ import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
 moduleForAcceptance('Acceptance | features');
 
 test('view the list of features', function(assert) {
-  visit('/telling-stories-dashboard');
+  visit('/features');
 
   andThen(function() {
-    assert.equal(currentURL(), '/telling-stories-dashboard');
+    assert.equal(currentURL(), '/features');
     assert.equal(find('.ts-feature-list__title').length, 2);
     assert.equal(find('.ts-feature-list__title:first').text().trim(), 'Favorites');
     assert.equal(find('.ts-feature-item').length, 4);
     assert.equal(find('.ts-feature-item:first').text().trim(), 'User favorites email from inbox');
 
-    assert.equal(find('.ts-feature-item').attr('href'), '/telling-stories-dashboard/12345');
+    assert.equal(find('.ts-feature-item').attr('href'), '/features/12345');
   });
 });
 
 test('view one feature', function(assert) {
-  visit('/telling-stories-dashboard/12345');
+  visit('/features/12345');
 
   andThen(function() {
-    assert.equal(currentURL(), '/telling-stories-dashboard/12345');
+    assert.equal(currentURL(), '/features/12345');
     assert.equal(find('.ts-feature-list__title').length, 2);
     assert.equal(find('.ts-feature-list__title:first').text().trim(), 'Favorites');
     assert.equal(find('.ts-feature-item').length, 4);

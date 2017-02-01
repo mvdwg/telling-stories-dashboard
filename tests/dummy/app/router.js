@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.mount('telling-stories-dashboard');
+  this.mount('telling-stories-engine', { path: '/features' });
 });
 
 export default Router;

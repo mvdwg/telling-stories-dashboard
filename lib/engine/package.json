@@ -3,6 +3,8 @@
   "keywords": [
     "ember-addon"
   ],
-  "devDependencies": {
+  "dependencies": {
+    "ember-cli-htmlbars": "*",
+    "ember-engines": "*"
   }
 }

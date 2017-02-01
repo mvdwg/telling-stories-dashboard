@@ -44,15 +44,19 @@
   "keywords": [
     "ember-addon"
   ],
+  "peerDependencies": {
+    "ember-engines": "^0.4.0",
+    "telling-stories": "^1.0.0-alpha.7"
+  },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
-    "telling-stories": "github:mvdwg/telling-stories#master"
+    "ember-cli-htmlbars": "^1.1.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "paths": [
-      "lib/telling-stories-engine",
-      "lib/telling-stories-parser"
+      "lib/engine",
+      "lib/parser"
     ]
   }
 }
