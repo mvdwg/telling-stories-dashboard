@@ -46,7 +46,7 @@
   ],
   "peerDependencies": {
     "ember-engines": "^0.4.0",
-    "telling-stories": "^1.0.0-alpha.7"
+    "telling-stories": "^1.0.0-alpha.8"
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
