@@ -4,8 +4,8 @@
     "ember-addon"
   ],
   "dependencies": {
-    "heimdalljs-logger": "^0.1.7",
-    "glob": "^5.0.10",
-    "broccoli-plugin": "^1.3.0"
+    "heimdalljs-logger": "*",
+    "glob": "*",
+    "broccoli-plugin": "*"
   }
 }
